@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- START: NAVBAR -->
+  <nav>
+    <img src="Images/DimasR3.svg" alt="Dimas Rizky 3">
+    
+    <div class="toggle" onclick="toggleMenu();">
+    </div>
+    <div class="nav-right navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cataloge</a></li>
+        <li><a href="#">Article</a></li>
+      </ul>
+      <a href="#" class="btn-login">Login</a>
+    </div>
+    
+  </nav>
+  <!-- START: NAVBAR -->
+
+
+  <script>
+    function toggleMenu() {
+      var menuToggle = document.querySelector('.toggle');
+      var navigation = document.querySelector('.navigation');
+
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+
+    }
+  </script>
+</body>
+</html>
